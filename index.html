@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sube tu video</title>
+    <link rel="shortcut icon" href="frontend/src/tekkure_logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="frontend/index.css"> <!-- Aquí se enlaza el CSS -->
+</head>
+<body>
+    <header>
+   
+        <section class="textos-header">
+            <h1>Entrena un modelo para que reconozca tu cara</h1>
+            <h2>Con solo un video</h2>
+        </section>
+             <nav>
+            <a href="index.html">Inicio</a>
+            <a href="#" onclick="mostrarAdvertencia()" >prueba el modelo</a>
+            <a href="frontend/navbar/portafolio.html">Portafolio</a>
+            <a href="frontend/navbar/contacto.html">Contacto</a>
+            <script>
+                function mostrarAdvertencia() {
+                alert("nos falta pulir detalles");}
+            </script>
+            
+        </nav>
+        
+    </header>
+    
+    <main>
+        <section class="contenedor sobre-meta">
+            <h2 class="titulo">Nuestro Propósito</h2>
+            <div class="contenedor-sobre-meta">
+                <img src="frontend/src/tekkure_logo.svg" alt="Imagen" class="meta">
+                <div class="contenido-texto">
+                    <h3><span>1</span> Propósito</h3>
+                    <p>Queremos robar tu cara para entrenar nuestros modelos de deteccion de rostros.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="subir-video">
+            <h2>Sube tu video</h2>
+            <form action="backend/subircopiANOBORRAR.php" method="post" enctype="multipart/form-data">
+                <input type="file" name="video" accept="video/*" required>
+                <button type="submit">Subir Video</button>
+            </form>
+        </section>
+    </main>
+        <footer>
+            emilio & brandon web &copy;2025
+        </footer>
+</body>
+</html>
