@@ -1,50 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <title>Tekkure</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch("/global/global.html")
+              .then(response => response.text())
+              .then(html => {
+                document.body.innerHTML = html;
+                document.getElementById("content").innerHTML = `
+                  <p>Desarrollo de Software</p>
+                  <p>Hoy en dia el software ya no es un lujo si no que una necesidad, el software es un sistema informatico para resolver nuestros problemas del dia a dia, pero algunos estan construidos para apoyar en el funcionamiento de un negocio como por ejemplo en la organizacion o incluso automatizar algunas tareas.
 
-  <link rel="shortcut icon" href="/src/img/tekkure_logo.svg" type="image/x-icon">
+                    Ademas de organizar mejor tu negocio un software puede ahorrarte tiempo y dinero.</p>
 
-  <link rel="stylesheet" href="/global/global.css">
-  <link rel="stylesheet" href="index.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+                  <p>Desarrollo de escritorio</p>
+                  <p>Desarrollo web</p>
+                  <p>Desarrollo movil</p>
+                    `;
+              });
+    });
+  </script>
 </head>
 <body>
-<header>
-  <div class="navbar">
-    <div class="nav_left">
-      <a href="/navbar/proyectos/proyectos.html" class="text_color_dark text_size_big text_weight_bold" >Proyectos</a>
-      <a href="/navbar/nosotros/nosotros.html" class="text_color_dark text_size_big text_weight_bold" >Nosotros</a>
-    </div>
-    <div class="logo_navbar">
-      <a href="index.html">
-        <img src="/src/img/tekkure_logo.svg" width="50px" alt="Imagen">
-      </a>
-    </div>
-    <div class="nav_right">
-      <a href="" class="text_color_dark text_size_big text_weight_bold" >Soporte</a>
-      <a href="/navbar/contacto/contacto.html" class="text_color_dark text_size_big text_weight_bold" >Contacto</a>
-    </div>
-  </div>
-</header>
-<main>
-    <p>Desarrollo de Software</p>
-    <p>Hoy en dia el software ya no es un lujo si no que una necesidad, el software es un sistema informatico para resolver nuestros problemas del dia a dia, pero algunos estan construidos para apoyar en el funcionamiento de un negocio como por ejemplo en la organizacion o incluso automatizar algunas tareas.
-
-      Ademas de organizar mejor tu negocio un software puede ahorrarte tiempo y dinero.</p>
-
-    <p>Desarrollo de escritorio</p>
-    <p>Desarrollo web</p>
-    <p>Desarrollo movil</p>
-</main>
-<footer>
-  <p class="text_weight_bold text_color_dark text_size_medium" >Tekkure &copy; <span id="year" ></span></p>
-</footer>
 </body>
-<script src="/global/global.js"></script>
 </html>
