@@ -9,18 +9,7 @@ body {
 
 /* Estilos para el encabezado */
 header {
-    background: linear-gradient(to right, #0066ff, #00ccff);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-}
-
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-bottom: 20px;
+    width: 100%; /* Asegúrate de que ocupe todo el ancho de la pantalla */
 }
 
 nav a {
@@ -165,3 +154,44 @@ footer a {
 footer a:hover {
     color: #ffcc00;             /* Color amarillo al pasar el ratón */
 }
+
+.navbar {
+    display: flex;
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Alinea el logotipo en el centro */
+    padding: 10px 40px;
+    height: 65px;
+    position: relative; /* Permite posicionar el logotipo */
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; /* Aumenta el espacio entre los enlaces */
+}
+
+.logo-navbar {
+    position: absolute; /* Logotipo fijo en el centro */
+    left: 50%; /* Coloca el logotipo en el centro horizontal */
+    transform: translateX(-50%); /* Centrado preciso */
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+.nav-left {
+    left: 0;  /* Coloca el elemento a la izquierda */
+}
+
+.nav-right {
+    right: 10%;  /* Coloca el elemento a la derecha */
+}
+
+
+
