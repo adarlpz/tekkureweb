@@ -1,42 +1,17 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
+html, body {
+    font-family: "Poppins", serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
-}
-
-/* Estilos para el encabezado */
-header {
-    width: 100%; /* Asegúrate de que ocupe todo el ancho de la pantalla */
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav a:hover {
-    color: #ffcc00;
-}
-
-.textos-header {
-    text-align: center;
-}
-
-.textos-header h1 {
-    font-size: 2.5em;
+    height: 100%;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.textos-header h2 {
-    font-size: 1.5em;
-    font-weight: lighter;
-    margin-top: 10px;
+header {
+    width: 100%;
 }
 
 .wave-section {
@@ -52,13 +27,6 @@ nav a:hover {
     position: absolute;
     width: 100%;
     bottom: 0;
-}
-
-/* Estilos para la sección sobre-meta */
-.contenedor {
-    width: 80%;
-    margin: auto;
-    padding: 50px 0;
 }
 
 .titulo {
@@ -131,28 +99,14 @@ button {
     transition: background 0.3s;
 }
 
-button:hover {
-    background: #0052cc;
-}
-
 footer {
-    
     background-color: #0066ff;  /* Fondo azul */
     color: white;               /* Texto blanco */
     text-align: center;         /* Centrado del texto */
     padding: 20px;              /* Espaciado interno */
     font-size: 1em;             /* Tamaño de fuente adecuado */
     margin-top: 20px;           /* Añade un pequeño margen superior si lo necesitas */
-}
-
-footer a {
-    color: white;               /* Color blanco para los enlaces */
-    text-decoration: none;      /* Quita el subrayado */
-    transition: color 0.3s;      /* Efecto suave al cambiar de color */
-}
-
-footer a:hover {
-    color: #ffcc00;             /* Color amarillo al pasar el ratón */
+    position: relative;
 }
 
 .navbar {
@@ -194,11 +148,14 @@ footer a:hover {
 }
 
 .text-bold {
-    font-family: "Poppins", serif;
     font-weight: 700;
     font-style: normal;
     text-decoration: none;
     color: black;
     font-size: 18px;
+}
+
+main {
+    flex: 1;
 }
 
