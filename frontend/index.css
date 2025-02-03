@@ -9,63 +9,34 @@ html, body {
     flex-direction: column;
 }
 
-.wave-section {
-    position: relative;
-    width: 100%;
-    height: 150px;
-    overflow: hidden;
-    background: linear-gradient(to right, #0066ff, #00ccff);
-    margin-top: 20px;
-}
-
-.wave {
-    position: absolute;
-    width: 100%;
-    bottom: 0;
-}
-
-.titulo {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.contenedor-sobre-meta {
+.navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    padding: 10px 40px;
+    height: 65px;
+    position: relative;
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
 }
-
-.meta {
-    width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.logo-navbar {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
-
-.subir-video form {
+.nav-left, .nav-right {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 10px;
+    position: absolute;
+    justify-content: space-between;
+    gap: 30px;
 }
-
-input[type="file"] {
-    padding: 10px;
-    border: 2px solid #0066ff;
-    border-radius: 5px;
-    cursor: pointer;
+.nav-left {
+    right: 60%;
 }
-
-button {
-    background: #0066ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
+.nav-right {
+    left: 60%;
 }
 
 footer {
@@ -78,44 +49,6 @@ footer {
     position: relative;
 }
 
-.navbar {
-    display: flex;
-    align-items: center; /* Centra verticalmente los elementos */
-    justify-content: center; /* Alinea el logotipo en el centro */
-    padding: 10px 40px;
-    height: 65px;
-    position: relative; /* Permite posicionar el logotipo */
-    max-width: 400px;
-    width: 80%;
-    margin: auto;
-}
-
-.nav-links {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px; /* Aumenta el espacio entre los enlaces */
-}
-
-.logo-navbar {
-    position: absolute; /* Logotipo fijo en el centro */
-    left: 50%; /* Coloca el logotipo en el centro horizontal */
-    transform: translateX(-50%); /* Centrado preciso */
-}
-
-.nav-left, .nav-right {
-    display: flex;
-    align-items: center;
-    position: absolute;
-}
-
-.nav-left {
-    right: 60%;  /* Coloca el elemento a la izquierda */
-}
-
-.nav-right {
-    left: 60%;  /* Coloca el elemento a la derecha */
-}
-
 .text-bold {
     font-weight: 700;
     font-style: normal;
@@ -123,4 +56,5 @@ footer {
     color: black;
     font-size: 18px;
 }
+
 
