@@ -9,6 +9,10 @@ html, body {
     flex-direction: column;
 }
 
+main    {
+    flex: 1;
+}
+
 .navbar {
     display: flex;
     align-items: center;
