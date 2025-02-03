@@ -186,12 +186,19 @@ footer a:hover {
 }
 
 .nav-left {
-    left: 0;  /* Coloca el elemento a la izquierda */
+    right: 60%;  /* Coloca el elemento a la izquierda */
 }
 
 .nav-right {
-    right: 10%;  /* Coloca el elemento a la derecha */
+    left: 60%;  /* Coloca el elemento a la derecha */
 }
 
-
+.text-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
 
