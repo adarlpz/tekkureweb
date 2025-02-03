@@ -6,27 +6,27 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 main {
     flex: 1;
-    padding: 25px;
-
+    padding: 1.5rem;
 }
-#content    {
+#content {
     flex: 1;
 }
 a {
     text-decoration: none;
 }
-/* barra de navegacion */
+/* barra de navegación */
 .navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 40px;
-    height: 65px;
+    padding: 0.625rem 2.5vw;
+    height: 4.06rem;
     position: relative;
-    max-width: 400px;
+    max-width: 25vw;
     width: 80%;
     margin: auto;
 }
@@ -40,7 +40,7 @@ a {
     align-items: center;
     position: absolute;
     justify-content: space-between;
-    gap: 30px;
+    gap: 1.875rem;
 }
 .nav_left {
     right: 60%;
@@ -52,18 +52,18 @@ a {
 footer {
     background-color: #f4f4f4;
     text-align: center;
-    padding-bottom: 30px;
-    height: 20px;
+    padding-bottom: 1.875rem;
+    height: 1.25rem;
 }
 /* ajustes para textos (tamaños, grosores y colores) */
-.text_size_big   {
-    font-size: 18px;
+.text_size_big {
+    font-size: 1.125rem;
 }
-.text_size_medium   {
-    font-size: 15px;
+.text_size_medium {
+    font-size: 0.9375rem;
 }
-.text_size_small   {
-    font-size: 13px;
+.text_size_small {
+    font-size: 0.8125rem;
 }
 .text_weight_bold {
     font-weight: 700;
@@ -82,4 +82,22 @@ footer {
 }
 .text_color_primary {
     color: #0066ff;
+}
+/* Diseño responsive */
+@media screen and (max-width: 48rem) { /* 768px ≈ 48rem */
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 0.625rem; /* 10px ≈ 0.625rem */
+    }
+    .nav_left, .nav_right {
+        position: static;
+        justify-content: center;
+        gap: 0.9375rem; /* 15px ≈ 0.9375rem */
+    }
+    .logo_navbar {
+        position: static;
+        transform: none;
+        margin-bottom: 0.625rem; /* 10px ≈ 0.625rem */
+    }
 }
