@@ -1,8 +1,6 @@
 /* ajustes de pagina y elementos */
 html, body {
     font-family: "Poppins", serif;
-    margin: 0;
-    padding: 0;
     background-color: #f4f4f4;
     color: #333;
     height: 100%;
@@ -12,6 +10,10 @@ html, body {
 main {
     flex: 1;
     padding: 25px;
+
+}
+#content    {
+    flex: 1;
 }
 a {
     text-decoration: none;
