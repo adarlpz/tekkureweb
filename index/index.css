@@ -1,3 +1,4 @@
+/* ajustes globales */
 html, body {
     font-family: "Poppins", serif;
     margin: 0;
@@ -14,7 +15,7 @@ main {
 a {
     text-decoration: none;
 }
-
+/* barra de navegacion */
 .navbar {
     display: flex;
     align-items: center;
@@ -44,7 +45,7 @@ a {
 .nav_right {
     left: 60%;
 }
-
+/* pie de pagina */
 footer {
     background-color: #0066ff;
     color: white;
@@ -54,7 +55,7 @@ footer {
     margin-top: 20px;
     position: relative;
 }
-
+/* ajustes para textos (tamaños, grosores y colores) */
 .text_size_big   {
     font-size: 18px;
 }
