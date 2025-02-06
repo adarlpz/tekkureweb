@@ -6,34 +6,21 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/global/global.js" defer></script>
 </head>
+
 <body>
-<div id="global-container"></div>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    fetch("/global/global.html")
-            .then(response => response.text())
-            .then(html => {
-              document.getElementById("global-container").innerHTML = html;
-              document.getElementById("content").innerHTML = `
-                  <p>Desarrollo de Software</p>
-                  <p>Hoy en dia el software ya no es un lujo si no que una necesidad, el software es un sistema informatico para resolver nuestros problemas del dia a dia, pero algunos estan construidos para apoyar en el funcionamiento de un negocio como por ejemplo en la organizacion o incluso automatizar algunas tareas.
 
-                    Ademas de organizar mejor tu negocio un software puede ahorrarte tiempo y dinero.</p>
+  <div id="header-container"></div>
 
-                  <p>Desarrollo de escritorio</p>
-                  <p>Desarrollo web</p>
-                  <p>Desarrollo movil</p>
-                    `;
-              let script = document.createElement("script");
-              script.src = "/global/global.js";
-              document.body.appendChild(script);
-            });
-  });
-</script>
 <main>
-
+  <p>
+    hola
+  </p>
 </main>
+
+<div id="footer-container"></div>
+
 </body>
 </html>
 
