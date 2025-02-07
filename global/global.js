@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    cargarContenido("/global/global.html", "header-container", "header");
-    cargarContenido("/global/global.html", "footer-container", "footer");
+    cargarContenido("./global/global.html", "header-container", "header");
+    cargarContenido("./global/global.html", "footer-container", "footer");
 
     setTimeout(() => {
         document.getElementById("year").textContent = new Date().getFullYear();
