@@ -1,37 +1,3 @@
-.collab_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.collab_image_section  {
-
-}
-.collab_info_section   {
-    max-width: 60%;
-}
-
-.member_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.member_image_section  {
-
-}
-.member_info_section   {
-    max-width: 60%;
-}
-.member_image_section   {
-
-}
-
-
-
-
-
-
-
-
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;

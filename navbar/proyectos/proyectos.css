@@ -1,0 +1,11 @@
+.project_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.project_image {
+
+}
+.project_info {
+    max-width: 60%;
+}

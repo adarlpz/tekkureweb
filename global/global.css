@@ -101,3 +101,16 @@ footer {
         margin-bottom: 0.625rem; /* 10px ≈ 0.625rem */
     }
 }
+
+/* Elementos */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
