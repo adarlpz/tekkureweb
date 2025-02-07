@@ -1,0 +1,11 @@
+.service_section    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.service_image  {
+
+}
+.service_info   {
+    max-width: 60%;
+}

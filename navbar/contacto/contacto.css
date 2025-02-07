@@ -1,21 +1,30 @@
-/* Estilos generales */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    text-align: center;
+.company_contact_section    {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
 }
 
-/* Estilos para el encabezado */
-header {
-    background: linear-gradient(to right, #0066ff, #00ccff);
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: relative;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 nav {
     display: flex;
